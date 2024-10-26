@@ -9,3 +9,14 @@
 // 14
 // FizzBuzz
 // ...
+for (let i = 1; i <= 100; i++) { // For loop that starts at 1 and increments by 1 until it is less than or equal to 100
+    if (i % 3 === 0 && i % 5 === 0) {
+      console.log('FizzBuzz'); // Outputs "FizzBuzz" to the console when the value of "i" is divisible by both 3 and 5
+    } else if (i % 3 === 0) {
+      console.log('Fizz'); // Outputs "Fizz" to the console when the first condition is false, but the value of "i" is still divisible by 3
+    } else if (i % 5 === 0) {
+      console.log('Buzz'); // Outputs "Buzz" to the console when neither of the above checks are true, but the value of "i" is divisible by 5 alone
+    } else {
+      console.log(i); // Outputs the numerical value of "i" to the console when none of the above conditions are met
+    }
+}
